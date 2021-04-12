@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <h4>Blackjack Card Counting</h4>
+    <h3>Player's Cards:</h3>
+    <div class="container">
+        <div class="row playercard1">
+            <div class="columns item1">
+                <img src="img/back of card.png" alt="">
+            </div>
+            <div class="columns item2">
+                <img src="img/back of card.png">
+            </div>   
+            <div class="columns item3">
+                <img src="img/back of card.png" alt="">
+            </div>  
+            <div class="columns item4">
+                <img src="img/back of card.png" alt="">
+            </div>  
+            <div class="columns items">
+                <img src="img/back of card.png" alt="">
+            </div>  
+        </div>
+    </div>
+    <h3>Input player card</h3>
+    <div class="container">
+        <div class="row playercard1">
+            <div class="columns input">
+                <input type="text" class="newcard1">
+            </div>
+            <div class="columns input">
+                <input type="text" class="newcard2">
+            </div>   
+            <div class="columns input">
+                <input type="text" class="newcard3">
+            </div>  
+            <div class="columns input">
+                <input type="text" class="newcard4">
+            </div>  
+            <div class="columns input">
+                <input type="text" class="newcard5">
+            </div>  
+        </div>
+    </div>
+    <h3 class="total">Card Count Score:</h3>>
+    <div class="container buttons">
+        <div class="row playercard1">
+            <div class="three columns input">
+                <button class='passcard' onclick="submitcards(); return false">Submit</button>
+            </div>
+            <div class="three columns input">
+                <button class="drawbutton" onclick="showScore(); return false">Show Cards</button>
+            </div>   
+            <div class="three columns input">
+                <button class="countbutton" onclick="countingcards(); return false">Count Cards</button>
+            </div>  
+            <div class="three columns input">
+                <button class="reset" onclick="resetfield(); return false">Reset</button>
+            </div>   
+        </div>
+    </div>
+        
+        <!-- <button class='passcard' onclick="randomDraw(); return false">Random Draw</button> -->
+        
+       
+        
+</body>
+<script src="js/main.js"></script>
+
+</html>
